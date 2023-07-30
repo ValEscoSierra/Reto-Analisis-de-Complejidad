@@ -50,6 +50,7 @@ class BuscadorDePares:
         final = time.perf_counter()
         times.append(final-inicio)
       plt.plot(tamanios, times, marker='o', linestyle='-', color='b', label='Datos de ejemplo')
+      plt.title(label="Optimización con diccionarios")
       plt.show()
     elif len(self.argv) == 3:
       lista = self.convertir_lista(self.argv[1].split(','))
