@@ -44,7 +44,7 @@ class BuscadorDePares:
         resultado = self.encontrar_pares(arreglo_i, 0)
         final = time.perf_counter()
         times.append(final-inicio)
-      plt.plot(tamanios, times, marker='o', linestyle='-', color='b', label='Datos de ejemplo')
+      plt.plot(tamanios, times)
       plt.title(label="Algoritmo original")
       plt.show()
     elif len(self.argv) == 3:
@@ -63,5 +63,7 @@ class BuscadorDePares:
     else:
       print("Los datos no son correctos")
 
+
 if __name__ == '__main__':
   buscador_de_pares = BuscadorDePares(sys.argv)
+  
